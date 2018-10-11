@@ -5,22 +5,26 @@
 
 int main(int argc, char *argv[]) {
 	
-   int a;
-   int b;
-  
-   printf("정수하나를 입력하시오 : \n");
-   scanf("%d", &b);
+   char c;
 
-   if(b>0)
+   printf("Input a char : ");
+   scanf("%c", &c);
+
+   if('A'<=c&&c<='Z')
 {
-   a = b;
+     printf("대문자입니다.");
 }
-   
+   else if ('a'<=c&&c<='z')
+{
+     printf("소문자입니다.");
+}
+   else if('0'<=c&&c<='9')
+{
+     printf("숫자입니다."); 
+}
    else
 {
-   a = -b;
+     printf("기타 글자입니다."); 
 }
-   printf("절대값은 %i입니다.", a);
-
    return 0;
 }
