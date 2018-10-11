@@ -5,24 +5,22 @@
 
 int main(int argc, char *argv[]) {
 	
-
    int a;
+   int b;
   
    printf("정수하나를 입력하시오 : \n");
-   scanf("%d", &a);
+   scanf("%d", &b);
 
-   if(a>0)
+   if(b>0)
 {
-   printf("양수입니다.\n");
+   a = b;
 }
-   else if (a==0)
-{ 
-   printf("0입니다.");
-}
+   
    else
 {
-   printf("음수입니다.\n");
+   a = -b;
 }
+   printf("절대값은 %i입니다.", a);
 
    return 0;
 }
